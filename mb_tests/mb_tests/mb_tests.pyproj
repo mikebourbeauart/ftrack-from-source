@@ -32,6 +32,23 @@
     <Folder Include="modules\" />
     <Folder Include="modules\ftrack\" />
     <Folder Include="modules\ftrack\connect\" />
+    <Folder Include="modules\ftrack\connect\ftrack-connect-maya\" />
+    <Folder Include="modules\ftrack\connect\ftrack-connect-maya\doc\" />
+    <Folder Include="modules\ftrack\connect\ftrack-connect-maya\doc\developing\" />
+    <Folder Include="modules\ftrack\connect\ftrack-connect-maya\doc\developing\api_reference\" />
+    <Folder Include="modules\ftrack\connect\ftrack-connect-maya\doc\image\" />
+    <Folder Include="modules\ftrack\connect\ftrack-connect-maya\doc\release\" />
+    <Folder Include="modules\ftrack\connect\ftrack-connect-maya\doc\using\" />
+    <Folder Include="modules\ftrack\connect\ftrack-connect-maya\resource\" />
+    <Folder Include="modules\ftrack\connect\ftrack-connect-maya\resource\hook\" />
+    <Folder Include="modules\ftrack\connect\ftrack-connect-maya\resource\plug_ins\" />
+    <Folder Include="modules\ftrack\connect\ftrack-connect-maya\resource\scripts\" />
+    <Folder Include="modules\ftrack\connect\ftrack-connect-maya\source\" />
+    <Folder Include="modules\ftrack\connect\ftrack-connect-maya\source\ftrack_connect_maya\" />
+    <Folder Include="modules\ftrack\connect\ftrack-connect-maya\source\ftrack_connect_maya\connector\" />
+    <Folder Include="modules\ftrack\connect\ftrack-connect-maya\source\ftrack_connect_maya\ui\" />
+    <Folder Include="modules\ftrack\connect\ftrack-connect-maya\test\" />
+    <Folder Include="modules\ftrack\connect\ftrack-connect-maya\test\unit\" />
     <Folder Include="modules\ftrack\connect\ftrack-connect\" />
     <Folder Include="modules\ftrack\connect\ftrack-connect\doc\" />
     <Folder Include="modules\ftrack\connect\ftrack-connect\doc\about\" />
@@ -85,6 +102,23 @@
     <Compile Include="bin\launcher.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="modules\ftrack\connect\ftrack-connect-maya\doc\conf.py" />
+    <Compile Include="modules\ftrack\connect\ftrack-connect-maya\resource\hook\ftrack_connect_maya_hook.py" />
+    <Compile Include="modules\ftrack\connect\ftrack-connect-maya\resource\plug_ins\ftrackMayaPlugin.py" />
+    <Compile Include="modules\ftrack\connect\ftrack-connect-maya\resource\scripts\userSetup.py" />
+    <Compile Include="modules\ftrack\connect\ftrack-connect-maya\setup.py" />
+    <Compile Include="modules\ftrack\connect\ftrack-connect-maya\source\ftrack_connect_maya\connector\mayaassets.py" />
+    <Compile Include="modules\ftrack\connect\ftrack-connect-maya\source\ftrack_connect_maya\connector\mayacon.py" />
+    <Compile Include="modules\ftrack\connect\ftrack-connect-maya\source\ftrack_connect_maya\connector\__init__.py" />
+    <Compile Include="modules\ftrack\connect\ftrack-connect-maya\source\ftrack_connect_maya\ui\export_asset_options_widget.py" />
+    <Compile Include="modules\ftrack\connect\ftrack-connect-maya\source\ftrack_connect_maya\ui\export_options_widget.py" />
+    <Compile Include="modules\ftrack\connect\ftrack-connect-maya\source\ftrack_connect_maya\ui\info.py" />
+    <Compile Include="modules\ftrack\connect\ftrack-connect-maya\source\ftrack_connect_maya\ui\publisher.py" />
+    <Compile Include="modules\ftrack\connect\ftrack-connect-maya\source\ftrack_connect_maya\ui\tasks.py" />
+    <Compile Include="modules\ftrack\connect\ftrack-connect-maya\source\ftrack_connect_maya\ui\__init__.py" />
+    <Compile Include="modules\ftrack\connect\ftrack-connect-maya\source\ftrack_connect_maya\_version.py" />
+    <Compile Include="modules\ftrack\connect\ftrack-connect-maya\source\ftrack_connect_maya\__init__.py" />
+    <Compile Include="modules\ftrack\connect\ftrack-connect-maya\test\unit\__init__.py" />
     <Compile Include="modules\ftrack\connect\ftrack-connect\doc\conf.py" />
     <Compile Include="modules\ftrack\connect\ftrack-connect\doc\resource\example_custom_launcher_houdini_hook.py" />
     <Compile Include="modules\ftrack\connect\ftrack-connect\doc\resource\example_houdini_hook.py" />
@@ -288,6 +322,28 @@
     <Compile Include="modules\ftrack\pythonpath\websocket.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\.git" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\.gitignore" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\doc\developing\api_reference\index.rst" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\doc\developing\index.rst" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\doc\glossary.rst" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\doc\image\maya_asset_manager.png" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\doc\image\maya_import_panel.png" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\doc\image\maya_publish_asset.png" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\doc\index.rst" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\doc\installing.rst" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\doc\release\index.rst" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\doc\release\release_notes.rst" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\doc\using\importing.rst" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\doc\using\index.rst" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\doc\using\launching.rst" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\doc\using\managing.rst" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\doc\using\publishing.rst" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\LICENSE.txt" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\MANIFEST.in" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\README.rst" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\setup.cfg" />
+    <Content Include="modules\ftrack\connect\ftrack-connect-maya\source\ftrack_connect_maya\connector\mayacon.conf" />
     <Content Include="modules\ftrack\connect\ftrack-connect\.git" />
     <Content Include="modules\ftrack\connect\ftrack-connect\.gitignore" />
     <Content Include="modules\ftrack\connect\ftrack-connect\doc\about\index.rst" />
