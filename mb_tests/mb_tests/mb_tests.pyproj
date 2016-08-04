@@ -5,15 +5,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f94fd87d-adea-4d91-8d46-0f45771d35b2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>bin\launcher.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>mb_tests</Name>
     <RootNamespace>mb_tests</RootNamespace>
-    <InterpreterId>{cafe0a32-04aa-4f3b-91c2-28153f4a3bbe}</InterpreterId>
+    <InterpreterId>{40a4a304-97a7-4a70-b0cd-ed957e4079c0}</InterpreterId>
     <InterpreterVersion>2.7</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -71,17 +70,16 @@
     <Folder Include="modules\ftrack\connect\ftrack-connect\test\" />
     <Folder Include="modules\ftrack\connect\ftrack-connect\test\interactive\" />
     <Folder Include="modules\ftrack\connect\ftrack-connect\test\unit\" />
-    <Folder Include="modules\ftrack\dependencies\" />
-    <Folder Include="modules\ftrack\dependencies\ftrack_api\" />
-    <Folder Include="modules\ftrack\dependencies\ftrack_api\clique\" />
-    <Folder Include="modules\ftrack\dependencies\ftrack_api\requests\" />
-    <Folder Include="modules\ftrack\dependencies\ftrack_api\requests\packages\" />
-    <Folder Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\" />
-    <Folder Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\" />
-    <Folder Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\contrib\" />
-    <Folder Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\packages\" />
-    <Folder Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\packages\ssl_match_hostname\" />
-    <Folder Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\util\" />
+    <Folder Include="modules\ftrack\pythonpath\" />
+    <Folder Include="modules\ftrack\pythonpath\clique\" />
+    <Folder Include="modules\ftrack\pythonpath\requests\" />
+    <Folder Include="modules\ftrack\pythonpath\requests\packages\" />
+    <Folder Include="modules\ftrack\pythonpath\requests\packages\chardet\" />
+    <Folder Include="modules\ftrack\pythonpath\requests\packages\urllib3\" />
+    <Folder Include="modules\ftrack\pythonpath\requests\packages\urllib3\contrib\" />
+    <Folder Include="modules\ftrack\pythonpath\requests\packages\urllib3\packages\" />
+    <Folder Include="modules\ftrack\pythonpath\requests\packages\urllib3\packages\ssl_match_hostname\" />
+    <Folder Include="modules\ftrack\pythonpath\requests\packages\urllib3\util\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bin\launcher.py">
@@ -199,108 +197,95 @@
     <Compile Include="modules\ftrack\connect\ftrack-connect\test\unit\test_duration.py" />
     <Compile Include="modules\ftrack\connect\ftrack-connect\test\unit\test_version_expression.py" />
     <Compile Include="modules\ftrack\connect\ftrack-connect\test\unit\__init__.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\clique\collection.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\clique\descriptor.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\clique\error.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\clique\sorted_set.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\clique\_version.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\clique\__init__.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\ftrack.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\pyparsing.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\adapters.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\api.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\auth.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\certs.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\compat.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\cookies.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\exceptions.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\hooks.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\models.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\big5freq.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\big5prober.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\chardetect.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\chardistribution.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\charsetgroupprober.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\charsetprober.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\codingstatemachine.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\compat.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\constants.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\cp949prober.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\escprober.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\escsm.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\eucjpprober.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\euckrfreq.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\euckrprober.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\euctwfreq.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\euctwprober.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\gb2312freq.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\gb2312prober.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\hebrewprober.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\jisfreq.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\jpcntx.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\langbulgarianmodel.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\langcyrillicmodel.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\langgreekmodel.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\langhebrewmodel.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\langhungarianmodel.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\langthaimodel.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\latin1prober.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\mbcharsetprober.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\mbcsgroupprober.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\mbcssm.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\sbcharsetprober.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\sbcsgroupprober.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\sjisprober.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\universaldetector.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\utf8prober.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\chardet\__init__.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\connection.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\connectionpool.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\contrib\ntlmpool.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\contrib\pyopenssl.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\contrib\__init__.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\exceptions.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\fields.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\filepost.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\packages\ordered_dict.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\packages\six.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\packages\ssl_match_hostname\_implementation.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\packages\ssl_match_hostname\__init__.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\packages\__init__.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\poolmanager.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\request.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\response.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\util\connection.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\util\request.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\util\response.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\util\retry.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\util\ssl_.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\util\timeout.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\util\url.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\util\__init__.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\_collections.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\urllib3\__init__.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\packages\__init__.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\sessions.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\status_codes.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\structures.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\utils.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\requests\__init__.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\six.py" />
-    <Compile Include="modules\ftrack\dependencies\ftrack_api\websocket.py" />
-  </ItemGroup>
-  <ItemGroup>
-    <Interpreter Include="env\ftrack-api-env\">
-      <Id>{cafe0a32-04aa-4f3b-91c2-28153f4a3bbe}</Id>
-      <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
-      <Version>2.7</Version>
-      <Description>ftrack-api-env (Python 64-bit 2.7)</Description>
-      <InterpreterPath>Scripts\python.exe</InterpreterPath>
-      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
-      <LibraryPath>Lib\</LibraryPath>
-      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
-      <Architecture>Amd64</Architecture>
-    </Interpreter>
+    <Compile Include="modules\ftrack\pythonpath\clique\collection.py" />
+    <Compile Include="modules\ftrack\pythonpath\clique\descriptor.py" />
+    <Compile Include="modules\ftrack\pythonpath\clique\error.py" />
+    <Compile Include="modules\ftrack\pythonpath\clique\sorted_set.py" />
+    <Compile Include="modules\ftrack\pythonpath\clique\_version.py" />
+    <Compile Include="modules\ftrack\pythonpath\clique\__init__.py" />
+    <Compile Include="modules\ftrack\pythonpath\ftrack.py" />
+    <Compile Include="modules\ftrack\pythonpath\pyparsing.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\adapters.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\api.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\auth.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\certs.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\compat.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\cookies.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\exceptions.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\hooks.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\models.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\big5freq.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\big5prober.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\chardetect.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\chardistribution.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\charsetgroupprober.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\charsetprober.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\codingstatemachine.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\compat.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\constants.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\cp949prober.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\escprober.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\escsm.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\eucjpprober.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\euckrfreq.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\euckrprober.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\euctwfreq.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\euctwprober.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\gb2312freq.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\gb2312prober.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\hebrewprober.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\jisfreq.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\jpcntx.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\langbulgarianmodel.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\langcyrillicmodel.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\langgreekmodel.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\langhebrewmodel.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\langhungarianmodel.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\langthaimodel.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\latin1prober.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\mbcharsetprober.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\mbcsgroupprober.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\mbcssm.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\sbcharsetprober.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\sbcsgroupprober.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\sjisprober.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\universaldetector.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\utf8prober.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\chardet\__init__.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\connection.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\connectionpool.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\contrib\ntlmpool.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\contrib\pyopenssl.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\contrib\__init__.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\exceptions.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\fields.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\filepost.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\packages\ordered_dict.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\packages\six.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\packages\ssl_match_hostname\_implementation.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\packages\ssl_match_hostname\__init__.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\packages\__init__.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\poolmanager.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\request.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\response.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\util\connection.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\util\request.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\util\response.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\util\retry.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\util\ssl_.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\util\timeout.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\util\url.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\util\__init__.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\_collections.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\urllib3\__init__.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\packages\__init__.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\sessions.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\status_codes.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\structures.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\utils.py" />
+    <Compile Include="modules\ftrack\pythonpath\requests\__init__.py" />
+    <Compile Include="modules\ftrack\pythonpath\six.py" />
+    <Compile Include="modules\ftrack\pythonpath\websocket.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="modules\ftrack\connect\ftrack-connect\.git" />
@@ -935,8 +920,22 @@
     <Content Include="modules\ftrack\connect\ftrack-connect\resource\sass\_style.scss" />
     <Content Include="modules\ftrack\connect\ftrack-connect\resource\sass\_variables.scss" />
     <Content Include="modules\ftrack\connect\ftrack-connect\setup.cfg" />
-    <Content Include="modules\ftrack\dependencies\ftrack_api\FTrackCore.egg" />
-    <Content Include="modules\ftrack\dependencies\ftrack_api\requests\cacert.pem" />
+    <Content Include="modules\ftrack\pythonpath\FTrackCore.egg" />
+    <Content Include="modules\ftrack\pythonpath\requests\cacert.pem" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="venv\ftrack-api-env\">
+      <Id>{40a4a304-97a7-4a70-b0cd-ed957e4079c0}</Id>
+      <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
+      <Version>2.7</Version>
+      <Description>ftrack-api-env (Python 64-bit 2.7)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>Amd64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
   <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
