@@ -88,4 +88,5 @@ ENV/
 # Rope project settings
 .ropeproject
 mb_tests/mb_tests/modules/ftrack/dependencies/
-mb_tests/mb_tests/modules/ftrack/pythonpath/
+mb_tests/mb_tests/modules/ftrack/pythonpath/ftrack_api
+mb_tests/mb_tests/modules/ftrack/pythonpath/python_api/
