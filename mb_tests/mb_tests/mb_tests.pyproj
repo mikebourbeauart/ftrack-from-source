@@ -12,7 +12,7 @@
     <OutputPath>.</OutputPath>
     <Name>mb_tests</Name>
     <RootNamespace>mb_tests</RootNamespace>
-    <InterpreterId>{579f9ab5-7dc2-44bb-9489-d5fe751a022b}</InterpreterId>
+    <InterpreterId>{a9952db7-924b-41c5-85d3-c2953be2c841}</InterpreterId>
     <InterpreterVersion>2.7</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -926,7 +926,7 @@
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="venv\ftrack-api-env\">
-      <Id>{579f9ab5-7dc2-44bb-9489-d5fe751a022b}</Id>
+      <Id>{a9952db7-924b-41c5-85d3-c2953be2c841}</Id>
       <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
       <Version>2.7</Version>
       <Description>ftrack-api-env (Python 64-bit 2.7)</Description>

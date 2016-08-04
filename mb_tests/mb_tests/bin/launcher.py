@@ -18,7 +18,21 @@ logger.addHandler(handler)
 logger.setLevel(logging.INFO)
 
 
+ENVIRS = os.environ.copy()
+
+ENVIRS['PYTHONPATH'] = \
+	'S:/_management/_mb_Pipeline/mb_Armada/mb_Armada/modules/dependencies/ftrack_api' + \
+	';S:/_management/_mb_Pipeline/mb_Armada/mb_Armada/modules/ftrack/connect/ftrack-connect/source' + \
+	';S:/_management/_mb_Pipeline/mb_Armada/mb_Armada/modules/ftrack/connect/ftrack-connect-maya/source' + \
+	';S:/_management/_mb_Pipeline/mb_Armada/mb_Armada/envs/ftrack-api-env/Lib/site-packages'
+
+ENVIRS['FTRACK_CONNECT_PLUGIN_PATH'] = \
+	'S:/_management/_mb_Pipeline/mb_Armada/mb_Armada/modules/ftrack/connect/ftrack-connect' + \
+	';S:/_management/_mb_Pipeline/mb_Armada/mb_Armada/modules/ftrack/connect/ftrack-connect-maya'
+
+ENVIRS['FTRACK_CONNECT_MAYA_PLUGINS_PATH']= \
+	'S:/_management/_mb_Pipeline/mb_Armada/mb_Armada/modules/ftrack/connect/ftrack-connect-maya/resource'
+
 logger.info('Launching Ftrack...')
 
-
-subprocess.Popen(['python', '-m', 'ftrack_connect'], env=envs)
+subprocess.Popen(['python', '-m', 'ftrack_connect'])
