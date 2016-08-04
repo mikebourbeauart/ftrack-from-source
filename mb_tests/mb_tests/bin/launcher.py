@@ -1,5 +1,4 @@
 import os
-import sys
 import subprocess
 import logging
 
@@ -12,7 +11,6 @@ _ENVS_DIR = os.path.join(_ROOT_DIR, 'envs')
 _MODULES_DIR = os.path.join(_ROOT_DIR, 'modules')
 _FTRACK_DIR = os.path.join(_MODULES_DIR, 'ftrack')
 _CONNECT_DIR = os.path.join(_FTRACK_DIR, 'connect')
-print _CONNECT_DIR
 
 if not os.path.exists(_LOGS_DIR):
 	os.makedirs(_LOGS_DIR) 
@@ -24,21 +22,31 @@ handler.setFormatter(formatter)
 logger.addHandler(handler) 
 logger.setLevel(logging.INFO)
 
-envs = os.environ.copy()
+ENVS = os.environ.copy()
 
-envs['PYTHONPATH'] = \
-	os.path.join(_FTRACK_DIR, 'pythonpath') + \
-	';' + os.path.join(_CONNECT_DIR, 'ftrack-connect', 'source') + \
-	';' + os.path.join(_CONNECT_DIR, 'ftrack-connect-maya' 'source') + \
-	';' + os.path.join(_ENVS_DIR, 'ftrack-api-env', 'Lib', 'site-packages')
+ENVS['PYTHONPATH'] = \
+	os.path.join(_ENVS_DIR, 'ftrack-api-env', 'Lib', 'site-packages') + \
+	os.pathsep + os.path.join(_FTRACK_DIR, 'pythonpath', 'ftrack_api') + \
+	os.pathsep + os.path.join(_CONNECT_DIR, 'ftrack-connect', 'source')
+	#os.pathsep + os.path.join(_CONNECT_DIR, 'ftrack-connect-maya' 'source') + \
 
-envs['FTRACK_CONNECT_PLUGIN_PATH'] = \
-	os.path.join(_CONNECT_DIR, 'ftrack-connect') + \
-	';S:/_management/_mb_Pipeline/mb_Armada/mb_Armada/modules/ftrack/connect/ftrack-connect-maya'
+ENVS['FTRACK_CONNECT_PLUGIN_PATH'] = \
+	os.path.join(_CONNECT_DIR, 'ftrack-connect')
+	#os.pathsep + os.path.join(_CONNECT_DIR, 'ftrack-connect-maya')
 
-envs['FTRACK_CONNECT_MAYA_PLUGINS_PATH']= \
-	'S:/_management/_mb_Pipeline/mb_Armada/mb_Armada/modules/ftrack/connect/ftrack-connect-maya/resource'
+#ENVS['FTRACK_CONNECT_MAYA_PLUGINS_PATH']= \
+	#os.path.join(_CONNECT_DIR, 'ftrack-connect-maya', 'resource')
+
+for key, val in sorted(ENVS.iteritems()):
+	logger.info('_____________________________________________________________________')
+	logger.info(key)
+	item_list = []
+	for item in val.split(';'):
+		item_list.append(item)
+		item_list.sort()
+	for item in item_list:
+		logger.info(item)
 
 logger.info('Launching Ftrack...')
 
-subprocess.Popen(['python', '-m', 'ftrack_connect'], env=envs)
+subprocess.Popen(['python', '-m', 'ftrack_connect'], env=ENVS)
