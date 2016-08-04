@@ -20,4 +20,5 @@ logger.setLevel(logging.INFO)
 
 logger.info('Launching Ftrack...')
 
+
 subprocess.Popen(['python', '-m', 'ftrack_connect'], env=envs)
