@@ -27,15 +27,15 @@ ENVS = os.environ.copy()
 ENVS['PYTHONPATH'] = \
 	os.path.join(_ENVS_DIR, 'ftrack-api-env', 'Lib', 'site-packages') + \
 	os.pathsep + os.path.join(_FTRACK_DIR, 'pythonpath', 'ftrack_api') + \
-	os.pathsep + os.path.join(_CONNECT_DIR, 'ftrack-connect', 'source')
-	#os.pathsep + os.path.join(_CONNECT_DIR, 'ftrack-connect-maya' 'source') + \
+	os.pathsep + os.path.join(_CONNECT_DIR, 'ftrack-connect', 'source') + \
+	os.pathsep + os.path.join(_CONNECT_DIR, 'ftrack-connect-maya' 'source')
 
 ENVS['FTRACK_CONNECT_PLUGIN_PATH'] = \
-	os.path.join(_CONNECT_DIR, 'ftrack-connect')
-	#os.pathsep + os.path.join(_CONNECT_DIR, 'ftrack-connect-maya')
+	os.path.join(_CONNECT_DIR, 'ftrack-connect') + \
+	os.pathsep + os.path.join(_CONNECT_DIR, 'ftrack-connect-maya')
 
-#ENVS['FTRACK_CONNECT_MAYA_PLUGINS_PATH']= \
-	#os.path.join(_CONNECT_DIR, 'ftrack-connect-maya', 'resource')
+ENVS['FTRACK_CONNECT_MAYA_PLUGINS_PATH']= \
+	os.path.join(_CONNECT_DIR, 'ftrack-connect-maya', 'resource')
 
 for key, val in sorted(ENVS.iteritems()):
 	logger.info('_____________________________________________________________________')
