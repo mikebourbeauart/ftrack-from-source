@@ -29,11 +29,11 @@ ENVS['PYTHONPATH'] = \
 	os.pathsep + os.path.join(_FTRACK_DIR, 'pythonpath', 'ftrack_api') + \
 	os.pathsep + os.path.join(_FTRACK_DIR, 'pythonpath', 'ftrack-python-api', 'source') + \
 	os.pathsep + os.path.join(_CONNECT_DIR, 'ftrack-connect', 'source') + \
-	os.pathsep + os.path.join(_CONNECT_DIR, 'ftrack-connect-maya' 'source')
+	os.pathsep + os.path.join(_CONNECT_DIR, 'ftrack-connect-maya', 'source')
 
 ENVS['FTRACK_CONNECT_PLUGIN_PATH'] = \
 	os.path.join(_CONNECT_DIR, 'ftrack-connect') + \
-	os.pathsep + os.path.join(_CONNECT_DIR, 'ftrack-connect-maya', 'source')
+	os.pathsep + os.path.join(_CONNECT_DIR, 'ftrack-connect-maya')
 
 ENVS['FTRACK_CONNECT_MAYA_PLUGINS_PATH']= \
 	os.path.join(_CONNECT_DIR, 'ftrack-connect-maya', 'resource')
