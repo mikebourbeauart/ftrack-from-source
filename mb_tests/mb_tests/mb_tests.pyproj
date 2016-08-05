@@ -133,6 +133,7 @@
     <Folder Include="modules\ftrack\pythonpath\ftrack_api\requests\packages\urllib3\util\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bin\auto_launcher.py" />
     <Compile Include="bin\launcher.py" />
     <Compile Include="modules\ftrack\connect\ftrack-connect-maya\doc\conf.py" />
     <Compile Include="modules\ftrack\connect\ftrack-connect-maya\resource\hook\ftrack_connect_maya_hook.py" />

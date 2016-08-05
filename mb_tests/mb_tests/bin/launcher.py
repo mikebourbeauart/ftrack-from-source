@@ -6,7 +6,7 @@ import logging
 # Directory helpers
 _ROOT_DIR = os.path.split(os.path.dirname(os.path.realpath(__file__)))[0]
 _LOGS_DIR = os.path.join(_ROOT_DIR, 'logs') 
-_VENVS_DIR = os.path.join(_ROOT_DIR, 'venvs', 'ftrack-api-env') 
+_VENVS_DIR = os.path.join(_ROOT_DIR, 'venv', 'ftrack-api-env') 
 _MODULES_DIR = os.path.join(_ROOT_DIR, 'modules')
 _FTRACK_DIR = os.path.join(_MODULES_DIR, 'ftrack')
 _CONNECT_DIR = os.path.join(_FTRACK_DIR, 'connect')
@@ -28,26 +28,6 @@ formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s', datefmt='
 handler.setFormatter(formatter)
 logger.addHandler(handler) 
 logger.setLevel(logging.INFO)
-
-###########################
-# Install environments for the first time
-if not os.path.exists(_VENVS_DIR):
-	# PySide
-	subprocess.call(['pip', 'install', 'PySide'], cwd=_VENVS_DIR)
-	# Install ftrack-connect
-	subprocess.call(
-		[
-			'pip', 'install', '--editable','git+https://bitbucket.org/ftrack/ftrack-connect.git#egg=ftrack_connect'
-		],
-		cwd=_VENVS_DIR
-	)
-	# Install ftrack-connect-maya
-	subprocess.call(
-		[
-			"pip", "install", "--editable", "git+https://bitbucket.org/ftrack/ftrack-connect-maya.git#egg=ftrack-connect-maya"
-		], 
-		cwd=_VENVS_DIR
-	)
 
 
 ###########################
