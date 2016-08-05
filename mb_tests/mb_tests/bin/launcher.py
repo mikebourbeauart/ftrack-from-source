@@ -5,7 +5,7 @@ import logging
 # Directory helpers
 _ROOT_DIR = os.path.split(os.path.dirname(os.path.realpath(__file__)))[0]
 _LOGS_DIR = os.path.join(_ROOT_DIR, 'logs') 
-_ENVS_DIR = os.path.join(_ROOT_DIR, 'envs') 
+_ENVS_DIR = os.path.join(_ROOT_DIR, 'venvs') 
 _MODULES_DIR = os.path.join(_ROOT_DIR, 'modules')
 _FTRACK_DIR = os.path.join(_MODULES_DIR, 'ftrack')
 _CONNECT_DIR = os.path.join(_FTRACK_DIR, 'connect')
