@@ -31,11 +31,10 @@ A learning tool for running ftrack from the source.
     - "Install from requirements.txt"
   - Just a note-- I tried installing from requirements.txt at home on my laptop and I got an error around the installation of connect which was related to cmake.  I ended up having to install the PySide package first and then manually installing the ftrack-connect package through a cmd prompt.
 3. Go to [root_dir]/bin/launcher.py> right click and set it as your Startup File.
-4. Hit the Start button to launch.
+4. To launch from VS, hit the Start button.
 
-Let me know if it something goes wrong. 
 
-# A few notes about the launcher.py:
+# Launching from outside of VS:
 
-- I build an env variable path dictionary there
-- I'm also outputting a log ([root_dir]\logs) that prints out all of the env vars during Ftrack launch so you can see what is being set.
+- Once you have the venv setup, just go into the bin folder and run the launch_ftrack_connect.bat file.
+- A log directory ([root_dir]\logs) prints out all of the env vars during Ftrack launch so you can see what is being set.
