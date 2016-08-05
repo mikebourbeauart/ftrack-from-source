@@ -38,7 +38,7 @@ ENVS['FTRACK_CONNECT_PLUGIN_PATH'] = \
 ENVS['FTRACK_CONNECT_MAYA_PLUGINS_PATH']= \
 	os.path.join(_CONNECT_DIR, 'ftrack-connect-maya', 'resource')
 
-# Logging pretty print
+# Logging
 for key, val in sorted(ENVS.iteritems()):
 	logger.info('_____________________________________________________________________')
 	logger.info(key)
