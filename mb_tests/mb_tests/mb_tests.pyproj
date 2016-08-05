@@ -5,7 +5,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f94fd87d-adea-4d91-8d46-0f45771d35b2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>bin\launcher.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -133,9 +134,7 @@
     <Folder Include="modules\ftrack\pythonpath\ftrack_api\requests\packages\urllib3\util\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bin\launcher.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="bin\launcher.py" />
     <Compile Include="modules\ftrack\connect\ftrack-connect-maya\doc\conf.py" />
     <Compile Include="modules\ftrack\connect\ftrack-connect-maya\resource\hook\ftrack_connect_maya_hook.py" />
     <Compile Include="modules\ftrack\connect\ftrack-connect-maya\resource\plug_ins\ftrackMayaPlugin.py" />
@@ -454,6 +453,7 @@
     <Compile Include="modules\ftrack\pythonpath\ftrack_api\websocket.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\launch_ftrack_connect.bat" />
     <Content Include="modules\ftrack\connect\ftrack-connect-maya\.git" />
     <Content Include="modules\ftrack\connect\ftrack-connect-maya\.gitignore" />
     <Content Include="modules\ftrack\connect\ftrack-connect-maya\doc\developing\api_reference\index.rst" />
