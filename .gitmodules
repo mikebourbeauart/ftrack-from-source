@@ -1,6 +1,3 @@
-[submodule "mb_tests/mb_tests/modules/ftrack/connect/ftrack-connect"]
-	path = mb_tests/mb_tests/modules/ftrack/connect/ftrack-connect
-	url = https://borbs727@bitbucket.org/ftrack/ftrack-connect.git
 [submodule "mb_tests/mb_tests/modules/ftrack/connect/ftrack-connect-maya"]
 	path = mb_tests/mb_tests/modules/ftrack/connect/ftrack-connect-maya
 	url = https://borbs727@bitbucket.org/ftrack/ftrack-connect-maya.git
