@@ -4,3 +4,6 @@
 [submodule "mb_tests/mb_tests/modules/ftrack/pythonpath/ftrack-python-api"]
 	path = mb_tests/mb_tests/modules/ftrack/pythonpath/ftrack-python-api
 	url = https://borbs727@bitbucket.org/ftrack/ftrack-python-api.git
+[submodule "mb_tests/mb_tests/modules/ftrack/connect/ftrack-connect"]
+	path = mb_tests/mb_tests/modules/ftrack/connect/ftrack-connect
+	url = https://borbs727@bitbucket.org/ftrack/ftrack-connect.git
