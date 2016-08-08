@@ -1,5 +1,5 @@
 # ftrack-from-source
-A learning tool for running ftrack from the source.
+A WIP learning tool for running ftrack from the source.
 
 # Usage:
 1. Clone the project
